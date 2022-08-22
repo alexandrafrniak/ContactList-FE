@@ -1,0 +1,19 @@
+body {
+  font-family: Monaco, Helvetica, sans-serif;
+}
+
+/* Input {
+  font-size: "20pt";
+} */
+
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

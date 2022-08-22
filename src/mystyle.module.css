@@ -1,0 +1,11 @@
+.title {
+  font-size: "50px";
+  opacity: 0.35;
+  text-align: center;
+  margin: 0em 0em;
+  font-family: "Lucida Handwriting";
+  color: "white";
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+}
