@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# Your Contacts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikácia na zobrazovanie / vytváranie kontaktov.
 
-## Available Scripts
+## Spustenie
 
-In the project directory, you can run:
+`npm start` na http://localhost:3000
 
-### `npm start`
+## Využité technológie
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- framework React
+- TypeScript
+- React router
+- Axios
+- MaterialUI
+- styled components
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Funkcionalita
 
-### `npm test`
+1. Zobrazenie telefónnych kontaktov v tabuľke (pozostávajúcich z mena, priezviska, telefónneho čísla a emailu). Sort podľa údajov v jednotlivých stĺpcoch (iba v móde na zobrazenie). Možnosť jednotlivé záznamy vymazať (po potvrdení pop-upu). Stránkovanie, pričom používateľ môže nastaviť počet záznamov na jednej stránke.
+2. Edit kontaktov. Po stlačení "pera" vedľa jednotlivých záznamov, respektíve tlačidla "go to edit mode" pod záznamami.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- "save changes" - po potvrdení pop-upu sa uložia nové záznamy, editujú sa tie vopred existujúce. Pre uloženie je potrebné zadať aspoň hodnotu do kolónky Last Name.
+- "add item" - pridá prázdny záznam do listu
+- "discard changes" po potvrdení zahodí vykonané zmeny (neuložené úpravy)
 
-### `npm run build`
+## Výzvy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- na stránkovanie záznamov a ich sortovanie som využila kód z dokumentácie MaterialUI, ktorý bolo treba upraviť a zjednodušiť.
+- mala som problém rozbehať styled components. Keď sa mi to podarilo tak prestalo fungovať material-ui-phone-number (na telefonické kontakty), preto bol tento komponent na poslednú chvíľu nahradený jednoduchým inputom.
+- mnoho postupov, ktoré som skúšala nefungovali s verziou Reactu v tomto projektu
